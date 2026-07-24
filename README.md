@@ -60,107 +60,142 @@ ResumeAI-Pro/
 ├── static/                # Static assets (CSS, JS, Images)
 ├── templates/             # HTML templates
 ├── database/
-│   ├── schema.sql         # Database schema
-│   └── resume_analyzer.sql# MySQL database dump
-└── .gitignore             # Git ignored files
+   ├── schema.sql         # Database schema
+   └── resume_analyzer.sql# MySQL database dump
 ```
 
 
-Technologies Used
-Backend
-Python
-Flask
-Flask SQLAlchemy
-Flask CORS
-MySQL
-PyMySQL
-AI & Machine Learning
-Google Gemini API
-NLTK
-Scikit-learn
-TF-IDF Vectorizer
-Cosine Similarity
-File Processing
-PyPDF2
-python-docx
-Frontend
-HTML5
-CSS3
-JavaScript (Vanilla)
-Database
+## 🛠️ Technologies Used
 
-The application uses MySQL with three primary tables:
+### Backend
+- Python
+- Flask
+- Flask-SQLAlchemy
+- Flask-CORS
+- MySQL
+- PyMySQL
 
-Users
-Sessions
-Analyses
+### 🤖 AI & Machine Learning
+- Google Gemini API
+- NLTK
+- Scikit-learn
+- TF-IDF Vectorizer
+- Cosine Similarity
 
-These tables store authentication details, user sessions, and resume analysis history.
+### 📄 File Processing
+- PyPDF2
+- python-docx
 
-API Endpoints
+### 🎨 Frontend
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-Authentication
-Method	Endpoint
-POST	/api/auth/signup
-POST	/api/auth/login
-POST	/api/auth/logout
-GET	/api/auth/me
-Resume Analysis
-Method	Endpoint
-POST	/api/analyze
-GET	/api/analyses
-GET	/api/analyses/{analysis_id}
-DELETE	/api/analyses/{analysis_id}
-GET	/api/analyses/stats
-Utility
-Method	Endpoint
-GET	/api/health
 
-How It Works
-User creates an account.
-User logs in.
-Uploads a resume (PDF/DOCX).
-Pastes a Job Description.
-Backend extracts resume text.
-Skills are extracted using NLP.
-TF-IDF and Cosine Similarity calculate the job match.
-Gemini AI generates detailed feedback.
-Results are stored in MySQL.
-Dashboard displays scores, insights, and analysis history.
-Key Analysis Metrics
-ATS Score
-Job Match Percentage
-Resume Strengths
-Weaknesses
-Missing Skills
-Technical Skills
-Soft Skills
-Resume Recommendations
-AI Feedback
-Overall Hiring Recommendation
-User Interface
+## 🗄️ Database
 
-The frontend includes:
+The application uses **MySQL** with three primary tables:
 
-Authentication pages
-Dashboard
-Resume Upload
-Loading Screen
-Analysis Results
-Statistics Cards
-Skill Gap Visualization
-Responsive Design
+| Table | Purpose |
+|--------|----------|
+| **Users** | Stores user account information |
+| **Sessions** | Manages user authentication sessions |
+| **Analyses** | Stores resume analysis results and history |
 
-The UI is built with modern HTML, CSS, and JavaScript and includes responsive layouts, dashboard cards, animated loading states, and detailed result visualizations.
+These tables work together to securely manage authentication, user sessions, and resume analysis records.
 
-Future Enhancements
-Resume Builder
-LinkedIn Profile Analysis
-Multi-language Resume Support
-Cover Letter Generator
-Resume Templates
-Company-wise ATS Optimization
-Interview Question Generator
-Resume Version Comparison
-Admin Dashboard
-Cloud Deployment
+## 🔗 API Endpoints
+
+### 🔐 Authentication
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/signup` | Register a new user |
+| POST | `/api/auth/login` | User login |
+| POST | `/api/auth/logout` | Logout user |
+| GET | `/api/auth/me` | Get logged-in user |
+
+---
+
+### 📄 Resume Analysis
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/analyze` | Analyze a resume |
+| GET | `/api/analyses` | Retrieve analysis history |
+| GET | `/api/analyses/{analysis_id}` | Get a specific analysis |
+| DELETE | `/api/analyses/{analysis_id}` | Delete an analysis |
+| GET | `/api/analyses/stats` | Retrieve dashboard statistics |
+
+---
+
+### ⚙️ Utility
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/health` | Check API health status |
+
+
+## ⚙️ How It Works
+
+1. 👤 User creates an account.
+2. 🔐 User logs into the application.
+3. 📄 Uploads a resume (PDF/DOCX).
+4. 📝 Pastes the Job Description.
+5. 📚 Backend extracts resume content.
+6. 🧠 NLP identifies technical and soft skills.
+7. 📊 TF-IDF & Cosine Similarity calculate the job match score.
+8. 🤖 Google Gemini AI generates personalized feedback.
+9. 💾 Analysis results are stored in MySQL.
+10. 📈 Dashboard displays scores, insights, and analysis history.
+
+
+## 📊 Key Analysis Metrics
+
+- ✅ ATS Compatibility Score
+- 🎯 Job Match Percentage
+- 💪 Resume Strengths
+- ⚠️ Weaknesses
+- 🔍 Missing Skills
+- 💻 Technical Skills Analysis
+- 🤝 Soft Skills Analysis
+- 💡 Resume Improvement Suggestions
+- 🤖 AI-Powered Feedback
+- 🏆 Overall Hiring Recommendation
+
+
+## 🖥️ User Interface
+
+The application includes the following user interfaces:
+
+- 🔐 Authentication Pages
+- 📊 Dashboard
+- 📄 Resume Upload Page
+- ⏳ Loading Screen
+- 📈 Analysis Results
+- 📋 Statistics Cards
+- 🎯 Skill Gap Visualization
+- 📱 Responsive Design
+
+### UI Highlights
+
+- Modern and clean interface
+- Responsive layout for all devices
+- Interactive dashboard
+- Animated loading states
+- Beautiful score visualizations
+- Easy-to-use navigation
+
+
+## 🚀 Future Enhancements
+
+- 📄 Resume Builder
+- 🔗 LinkedIn Profile Analysis
+- 🌍 Multi-language Resume Support
+- ✍️ AI Cover Letter Generator
+- 🎨 Professional Resume Templates
+- 🏢 Company-specific ATS Optimization
+- 🎤 AI Interview Question Generator
+- 📊 Resume Version Comparison
+- 👨‍💼 Admin Dashboard
+- ☁️ Cloud Deployment
