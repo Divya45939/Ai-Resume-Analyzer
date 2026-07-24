@@ -49,22 +49,22 @@ The backend is built using Flask with SQLAlchemy, PDF/DOCX parsing, TF-IDF, cosi
 
 ## 📁 Project Structure
 
+```text
 ResumeAI-Pro/
 │
 ├── app.py                 # Flask backend application
 ├── index.html             # Frontend (HTML, CSS, JavaScript)
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
-│
 ├── uploads/               # Temporary uploaded resumes
-├── static/                # Static assets (CSS, JS, Images) *(Optional)*
-├── templates/             # HTML templates *(Optional if using Flask templates)*
-│
+├── static/                # Static assets (CSS, JS, Images)
+├── templates/             # HTML templates
 ├── database/
-│   ├── schema.sql         # Database schema *(Optional)*
-│   └── resume_analyzer.sql# MySQL database dump *(Optional)*
-│
+│   ├── schema.sql         # Database schema
+│   └── resume_analyzer.sql# MySQL database dump
 └── .gitignore             # Git ignored files
+```
+
 
 Technologies Used
 Backend
