@@ -6,21 +6,48 @@ Tech Stack: Flask • Python • MySQL • HTML • CSS • JavaScript • Googl
 
 The backend is built using Flask with SQLAlchemy, PDF/DOCX parsing, TF-IDF, cosine similarity, and Gemini AI integration, while the frontend provides a modern responsive interface for authentication, resume upload, analysis, and dashboard visualization.
 
-Features
-User Registration & Login
-Secure Session Authentication
-Resume Upload (PDF & DOCX)
-Job Description Analysis
-ATS Score Calculation
-Resume & Job Match Score
-Missing Skills Detection
-Skill Gap Analysis
-AI-Powered Resume Feedback
-Resume Improvement Suggestions
-Analysis History
-Dashboard with Statistics
-Responsive Modern UI
+## ✨ Features
+
+### 🔐 Authentication
+- User Registration
+- User Login
+- Secure Session Authentication
+- Password Encryption
+
+### 📄 Resume Analysis
+- Upload Resume (PDF & DOCX)
+- Job Description Analysis
+- ATS Score Calculation
+- Resume & Job Match Score
+- AI-Powered Resume Feedback
+
+### 🎯 Skill Analysis
+- Technical Skills Detection
+- Missing Skills Identification
+- Skill Gap Analysis
+- Resume Improvement Suggestions
+
+### 📊 Dashboard & Analytics
+- Analysis History
+- Dashboard with Statistics
+- Previous Resume Reports
+- Performance Insights
+
+### 🤖 AI Capabilities
+- Google Gemini AI Integration
+- Intelligent Resume Evaluation
+- Personalized Recommendations
+- ATS Optimization Suggestions
+
+### 💻 User Experience
+- Modern Responsive UI
+- Drag & Drop Resume Upload
+- Interactive Dashboard
+- Fast Resume Processing
+- Mobile-Friendly Design
+
 Project Structure
+
 ResumeAI-Pro/
 │
 ├── app.py                  # Flask Backend
